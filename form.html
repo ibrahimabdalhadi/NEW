@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- disabled لا يتم ارسال البيانات 
+     readonly يتم ارسال البيانات -->
+    <a href="index.html">GO TO THE MAIN</a>
+    <form method="post">
+        <fieldset>
+            <legend>LOGIN</legend>
+        <label for="username">User Name</label>
+        <input type="text" id="username" name="name of user"/><br><br>
+        <label for="userpassword">Password</label>
+        <input type="password" id="userpassword" name="password of user"/><br><br>
+        <label>Gender</label>
+        <input type="radio" name="Gender" value="Male"/><label>Male</label>
+        <input type="radio" name="Gender" value="Female"/><label>Female</label><br><br>
+        <label>Age</label>
+        <input type="number" min="22" max="60" step="1" required/><br><br>
+        <label>Languge</label>
+        <input type="checkbox" name="Lang" value="java"/><label>java</label>
+        <input type="checkbox" name="Lang" value="cpp"/><label>cpp</label>
+        <input type="checkbox" name="Lang" value="nodejs"/><label>nodejs</label><br><br>
+        <select name="Experions">
+          <option value="0-2 year">0-2 year of experions</option>
+          <option value="2-5 year" selected="selected">2-5 year of experions</option>
+          <option value="more than 5 year">more than 5 year of experions</option>
+        </select><br><br>
+        <input list="title"/>
+        <datalist id="title">
+        <option value="frontend">
+        <option value="backend">
+        <option value="hardwore">
+        </datalist><br><br>
+        <input type="submit" value="LOGIN"/>
+        </fieldset>
+        
+    </form>
+</body>
+</html>
